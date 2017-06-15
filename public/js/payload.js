@@ -128,7 +128,7 @@ var PayloadPanel = (function() {
         var entities = data.entities
         entities.forEach(function(entity) {
           if (entity) {
-            watson.recog.push({ item: {name :'@' + entity.value + ' : ' + entity.value , confidence: (entity.confidence * 100).toFixed(0) + "%"  }})
+            watson.recog.push({ item: {name :'@' + entity.entity + ' : ' + entity.value , confidence: (entity.confidence * 100).toFixed(0) + "%"  }})
           }
         })
       }
